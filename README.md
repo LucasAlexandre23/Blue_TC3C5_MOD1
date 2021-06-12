@@ -34,6 +34,7 @@ maiúscula e sem espaços em branco.
 ex1 = input('Digite uma Frase: \n"')
 print(ex1.upper().replace(" ",""))
 
+
 ### 03 – Faça um programa que solicite a altura e o peso do usuário, e calcule o seu IMC. Os 
 dados entrados precisam ser corrigidos pelo programa (trocando “,” por “.” e eliminando 
 espaços e letras extras)
@@ -110,6 +111,56 @@ else:
 #Por fim, se for entre 9.0 e 10.0, deve exibir um belo de um A.
 
 nota = float()input('Insira sua nota': )
+
+###Relembrando IF
+   resposta = input('Você costuma viajar de avião?: ')
+   if resposta == "sim":
+     print('Que bom')
+     resposta2 = input('Gostaria de ver nossas ofertas?: ')
+   if resposta2 == 'sim':
+     input('Insira seu e-mail: ')
+     print('Você receberá um e-mail em sua caixa de mensagens, obrigado!')
+   elif resposta2 == 'não':
+     print('Obrigado pela atenção.')
+   else:
+     print('Não entendi sua resposta')
+     
+### Relembrando INT
+
+idade = int(input('Qual sua idade meu caro amigo?: '))
+if idade < 18:
+  print('Poxa amigão, ao fazer 18 anos, irei pagar sua CNH!')
+else:
+  print ('Coisa boa amigo, irei pagar sua CNH!')     
+
+### FUNÇÃO WHILE
+
+
+num1 = int(input('Digite um Número: '))
+num2 = int(input('Digite outro Número: '))
+
+while num1 > num2:
+  print('O primeiro número digitado, é maior!')
+  num1 = int(input('Digite um Número: '))
+  num2 = int(input('Digite outro Número: '))
+  
+############## ATIVIDADE WHILE ########################################################################################################################################## 
+
+###1 - Faça um programa que leia o sexo biológico de uma pessoa, mas só aceite os valores ‘M’ ou ‘F’.
+###Caso esteja errado, peça a digitação novamente até ter um valor correto.
+
+sexo = input('Digite seu sexo: [F / M]\n').upper()
+while sexo != 'F' and sexo != 'M':
+  sexo = input('Entrada Inválida! Digite seu sexo: [F / M]\n').upper()
+print('Obrigado')
+
+### 2 - Escreva um programa que pede a senha uma senha ao usuário, e só sai do loop quando digitarem
+corretamente a senha. A senha é “Blue123”
+2b - Exiba quantas vezes o usuário errou a digitação.
+
+### 3 Crie um jogo onde o computador vai “pensar” em um número entre 0 e 10. O jogador vai tentar
+adivinhar qual número foi escolhido até acertar, mostrando no final quantos palpites foram
+necessários para vencer
 
 
 
