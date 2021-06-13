@@ -155,8 +155,24 @@ while sexo != 'F' and sexo != 'M':
 print('Obrigado')
 
 ### 2 - Escreva um programa que pede a senha uma senha ao usuário, e só sai do loop quando digitarem
-corretamente a senha. A senha é “Blue123”
-2b - Exiba quantas vezes o usuário errou a digitação.
+### corretamente a senha. A senha é “Blue123”
+### 2b - Exiba quantas vezes o usuário errou a digitação.
+
+senha = 'Blue123'
+acesso = str(input('Digite sua senha: '))
+tentativas = 0
+
+while acesso != senha:
+  print('Senha incorreta')
+  acesso = str(input('Digite sua senha: '))
+  tentativas = tentativas + 1
+
+if tentativas > 0:
+  print('Seja bem vindo.')
+  print('A senha foi digitada incorretamente ' + str(tentativas) + ' vezes')
+else:
+  print('Seja bem vindo.')
+
 
 ### 3 Crie um jogo onde o computador vai “pensar” em um número entre 0 e 10. O jogador vai tentar
 adivinhar qual número foi escolhido até acertar, mostrando no final quantos palpites foram
