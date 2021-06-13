@@ -163,4 +163,36 @@ adivinhar qual número foi escolhido até acertar, mostrando no final quantos pa
 necessários para vencer
 
 
+### Resposta Desafio
+
+print('Seja bem vindo a Delegacia de plantão de Parnamirim')
+print('Olá, sou o Detetive Lucas Marciel, tudo bem?')
+print('Irei iniciar o interrogatório!')
+pergunta1 = str(input('Você telefonou para a vítima? [S / N]: ')[0:1]).upper()
+pergunta2 = str(input('Você esteve no local do crime? [S / N]: ')[0:1]).upper()
+pergunta3 = str(input('Você mora perto da vítima? [S / N]: ')[0:1]).upper()
+pergunta4 = str(input('Você devia para a vítima? [S / N]: ')[0:1]).upper()
+pergunta5 = str(input('Você já trabalhou com a vítima? [S / N]: ')[0:1]).upper()
+cont = 0
+x = 0
+sim = 0
+
+if pergunta1 == 'S':
+    cont = cont + 1
+if pergunta2 == 'S':
+    cont = cont + 1
+if pergunta3 == 'S':
+    cont = cont + 1
+if pergunta4 == 'S':
+    cont = cont + 1
+if pergunta5 == 'S':
+    cont = cont + 1
+if cont == 5:
+    print('Você é o assasino, você está preso!!')
+if cont >= 3 and cont <= 4:
+    print('Você é cumplice do assasinato, está preso!!')
+if cont == 2:
+    print('Você é Suspeito na investigação, poderá ser chamado novamente!')
+if cont <= 1:
+    print('Você está liberado, Inocente!')
 
