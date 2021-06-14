@@ -178,6 +178,23 @@ else:
 adivinhar qual número foi escolhido até acertar, mostrando no final quantos palpites foram
 necessários para vencer
 
+### Crie um programa que leia a idade e o sexo de várias pessoas.
+A cada pessoa cadastrada, o programa deverá perguntar se o usuário quer ou não continuar.
+No final mostre:
+
+A) Quantas pessoas tem mais de 18 anos
+B) Quantos homens foram cadastrados.
+C) Quantas mulheres tem menos de 20 anos.
+
+##RESPOSTA:
+while continuação != 'N':
+  nome = str(input('Qual o seu sexo?: '))[0:1].upper()
+  idade = int(input('Quantos anos você tem?: '))
+  continuação = str(input('Deseja continuar?[S/N]: '))[0:1].upper()
+
+while continuação == 'N':
+  break
+
 
 ### Resposta Desafio
 
