@@ -35,6 +35,8 @@ ex1 = input('Digite uma Frase: \n"')
 print(ex1.upper().replace(" ",""))
 
 
+
+
 ### 03 – Faça um programa que solicite a altura e o peso do usuário, e calcule o seu IMC. Os 
 dados entrados precisam ser corrigidos pelo programa (trocando “,” por “.” e eliminando 
 espaços e letras extras)
@@ -228,4 +230,31 @@ if cont == 2:
     print('Você é Suspeito na investigação, poderá ser chamado novamente!')
 if cont <= 1:
     print('Você está liberado, Inocente!')
+    
+##Lista + ##FOR + ##RANGE
+lista =[10, 20, 30, 40, 50, 'macaco', 'chinelo']
+print(len(lista))
+print(lista)
+print(type(lista))
 
+for i in range (len(lista)):
+    print(i)
+    print()
+for i in lista:
+    print(i)
+
+
+###Função FOR + RANGE
+Escolhe um elemento que irá se repetir, durante uma determinada sequência
+###Exemplo:
+
+Letras_a = 0 
+cont = 0
+for i in range(0,10, 4):
+    print(i)
+    print('Olha o MACACO')
+    cont += 1
+    if i == "a" or i == "A":
+        Letras_a += 1
+        break
+print(f'Contador:', cont)
