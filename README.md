@@ -1,5 +1,7 @@
 # Blue_TC3C5_MOD1
 "Repositório criado para guardar projetos da turma TC3C5"
+
+
 ###Tabela de conversão R$ para Moedas.
 
 print("Tabela de Conversão do Real")
@@ -258,3 +260,17 @@ for i in range(0,10, 4):
         Letras_a += 1
         break
 print(f'Contador:', cont)
+
+###Como utilizar uma lista, e como substituir os elementos da lista, usando a função INPUT
+###Observação, ao usar o FOR, o "i" assume o papel do indice 0 da lista.
+Ou seja, não importa qual for o caractere escolhido.
+
+l = [10,20,30,40,50]
+print(l)
+print(len(l))
+for i in range(5):
+    print(i)
+for i in range(5):
+    print(i)
+    l[i] = input(f'Digite o novo valor para {i}: ')
+    print(l)
