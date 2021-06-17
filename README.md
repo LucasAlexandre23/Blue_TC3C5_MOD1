@@ -274,3 +274,48 @@ for i in range(5):
     print(i)
     l[i] = input(f'Digite o novo valor para {i}: ')
     print(l)
+
+### 1- Dada a lista L = [5, 7, 2, 9, 4, 1, 3], escreva um programa que imprima as seguintes informações:
+
+## 1- Dada a lista L = [5, 7, 2, 9, 4, 1, 3], escreva um programa que imprima as seguintes informações:
+# a) tamanho da lista.
+# b) maior valor da lista.
+# c) menor valor da lista.
+# d) soma de todos os elementos da lista.
+# e) lista em ordem crescente.
+# f) lista em ordem decrescente
+
+# lista = [5,7,2,9,4,1,3]
+# print('O tamanho da lista é: ', len(lista))
+# print('O maior valor da lista é: ', (max(lista)))
+# print('O menor valor da lista é: ', (min(lista)))
+# print('A soma de todos os elementos da lista é: ', (sum(lista)))
+# lista.sort()
+# print(lista)
+# lista.reverse()
+# print(lista)
+
+# 2- Utilizando listas faça um programa que faça 5 perguntas para uma pessoa sobre um crime. As 
+# perguntas são:
+# "Telefonou para a vítima?"
+# "Esteve no local do crime?"
+# "Mora perto da vítima?"
+# "Devia para a vítima?"
+# "Já trabalhou com a vítima?" 
+# O programa deve no final emitir uma classificação sobre a participação da pessoa no crime. Se a 
+# pessoa responder positivamente a 2 questões ela deve ser classificada como "Suspeita", entre 3 e 4 
+# como "Cúmplice" e 5 como "Assassino". 
+# Caso contrário, ele será classificado como "Inocente".
+
+
+
+### 3- Faça um jogo da forca. O programa terá uma lista de palavras lidas de um arquivo texto e 
+### escolherá uma aleatoriamente. O jogador poderá errar 6 vezes antes de ser enforcado
+
+lista_palavras = ['Abacate', 'Gelo', 'Pneu', 'Condicionador', 'Desodorante']
+#print(len(lista_palavras))
+sorteado = random.randint(0,len(lista_palavras)-1
+print(sorteado)
+palavra_foca = lista_palavras[sorteado]
+print(palavra_forca)
+
