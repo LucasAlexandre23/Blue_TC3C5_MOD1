@@ -275,9 +275,8 @@ for i in range(5):
     l[i] = input(f'Digite o novo valor para {i}: ')
     print(l)
 
-### 1- Dada a lista L = [5, 7, 2, 9, 4, 1, 3], escreva um programa que imprima as seguintes informações:
 
-## 1- Dada a lista L = [5, 7, 2, 9, 4, 1, 3], escreva um programa que imprima as seguintes informações:
+### 1- Dada a lista L = [5, 7, 2, 9, 4, 1, 3], escreva um programa que imprima as seguintes informações:
 # a) tamanho da lista.
 # b) maior valor da lista.
 # c) menor valor da lista.
@@ -307,6 +306,8 @@ for i in range(5):
 # como "Cúmplice" e 5 como "Assassino". 
 # Caso contrário, ele será classificado como "Inocente".
 
+lista = ['Telefonou para a vítima?: '], ['Esteve no local do crime?: '], ['Mora perto da vítima?: '], ['Devia para a vitima?: '], ['Já trabalhou com a vítima?: 
+
 
 
 ### 3- Faça um jogo da forca. O programa terá uma lista de palavras lidas de um arquivo texto e 
@@ -318,4 +319,6 @@ sorteado = random.randint(0,len(lista_palavras)-1
 print(sorteado)
 palavra_foca = lista_palavras[sorteado]
 print(palavra_forca)
+
+
 
