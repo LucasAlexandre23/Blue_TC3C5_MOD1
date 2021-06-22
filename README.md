@@ -321,4 +321,61 @@ palavra_foca = lista_palavras[sorteado]
 print(palavra_forca)
 
 
+#O que são dicionários??
+
+
+# lista = list()
+
+# while True:
+#     nome = input('Digite o próximo nome: ')
+#     lista.append(nome)
+#     valor = input('Digite o próximo telefone: ')
+#     lista.append(valor)
+#     print(lista)
+
+# dic1 = {'Gustavo':['Silva','1234-5678'], 'Ana':'555-666', 'Janice': '8765-4321', 'Marina': '7455-5628'}
+# nome = input('Digite o nome da pessoa: ').title()
+# print(dic1.get(nome))
+
+vingadores = {'Chris Evans':'Capitão América', 'Mark Ruffalo': 'Hulk', 'Tom Hiddleston': 'Loki', 
+'Chris Hemworth':'Thor','Robert Downey Jr':'Homem de Ferro', 'Scarlett Johansson': 'Viuva Negra'}
+print('Loki' in vingadores.values())
+
+print('Mark Ruffalo' in vingadores.keys())
+print('Hulk' in vingadores.values())
+##Chave será o que vem antes dos dois pontos, e valor, o que vem após.
+
+vingadores['Robert Deniro'] = 'Batman' ##Modo de adicionar uma chave e valor ao dicionário!!!
+
+nome = input('Digite o nome do ator: ')
+personagem = input('Digite o nome do personagem: ')
+
+vingadores[nome] = personagem ###Modo de adicionar uma chave/valor utilizando o INPUT!!!
+
+# print(vingadores)
+# print(sorted(vingadores.keys()))
+# print(sorted(vingadores.values()))
+
+deletados = vingadores.pop('Chris Evans') ### Função que consegue deletar da lista um elemento, e adicionar
+## em uma variável.
+print(vingadores)
+print()
+print('O personagem deletado foi: ', deletados)
+
+# ###Como deletar uma chave dentro do dicionário, excluir.
+# print()
+# del vingadores['Robert Deniro']
+# del vingadores['Chris Hemworth']
+# print(vingadores)
+
+### Como criar uma lista, transforma-la em dicionário, e após isso, elevar ao quadrado.
+
+# numeros_quadrados = dict() ### Criar um dicionário vazio
+# lista_numeros = [1, 4, 5, 6, 7, 9]
+# for n in lista_numeros: ### Percorrer a lista, cada elemento, e realizar alguma operação nele.
+#     numeros_quadrados[n] = n**2 ### Essa é a formula para elevar um número ao quadrado, "n" representa cada elemento da lista
+# print(numeros_quadrados)
+
+### Crie um dicionário em que suas chaves correspondem a números inteiros entre [1,10]
+### e cada valor associado é o número ao quadrado.
 
